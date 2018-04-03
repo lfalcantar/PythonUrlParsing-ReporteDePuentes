@@ -1,7 +1,10 @@
 from xml.dom import minidom
 import urllib2, Constants
 
-dom = minidom.parse(urllib2.urlopen(Constants.URL))
+file_name = "export.xml"
 
-
-#TODO logic to get file locally
+xml = urllib2.urlopen(Constants.URL)
+contents = xml.read()
+file = open("LOCALHOST/" + file_name, 'w')
+file.write(contents)
+file.close()

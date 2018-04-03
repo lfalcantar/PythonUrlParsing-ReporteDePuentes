@@ -1,5 +1,6 @@
 URL = 'https://apps.cbp.gov/bwt/bwt.xml'  # define XML location live
-LOCAL_URL = ""
+LOCAL_URL = "LOCALHOST/export.xml"
+
 #TODO find how to link to local xml
 
 PORT = "port"  #main attribute
